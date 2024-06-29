@@ -59,3 +59,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+.h1 {
+  /* Apply a text size of 6xl */
+  @apply text-6xl;
+  
+  /* On extra large screens, apply a text size of 72px */
+  @apply xl:text-[72px];
+  
+  /* On extra large screens, apply a line height of 80px */
+  @apply xl:leading-[80px];
+  
+  /* Apply a letter spacing of -2px */
+  @apply tracking-[-2px];
+  
+  /* Apply a bold font weight */
+  @apply font-bold;
+}

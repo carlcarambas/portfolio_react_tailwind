@@ -5,7 +5,6 @@ import {
   RiBriefcase4Fill,
   RiTeamFill,
   RiTodoFill,
-  RiArrowDownSLine,
 } from 'react-icons/ri'
 
 // components
@@ -24,7 +23,7 @@ const Hero = () => {
           {/* text */}
           <div>
             <div>Web Developer</div>
-            <h1>Hello, My name is Carl Mark Carambas</h1>
+            <h1 className="h1">Hello, My name is Carl Mark Carambas</h1>
             <p>
               Brief description with insights to myself, my vocatonal journey
               and what I engage in professionally
