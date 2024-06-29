@@ -1,6 +1,12 @@
 import React from "react";
 
-import { RiArrowDownSLine } from "react-icons/ri";
+import {
+  RiArrowDownSLine,
+  RiBriefcase4Fill,
+  RiTeamFill,
+  RiTodoFill,
+  RiArrowDownSLine,
+} from 'react-icons/ri'
 
 // components
 import DevImg from "./DevImg";
