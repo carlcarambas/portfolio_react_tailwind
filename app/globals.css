@@ -76,3 +76,7 @@
   /* Apply a bold font weight */
   @apply font-bold;
 }
+
+.subtitle {
+  @apply text-muted-foreground text-lg mb-8 font-light;
+}

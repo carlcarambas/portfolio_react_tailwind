@@ -25,14 +25,16 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="h1">Hello, My name is Carl Mark Carambas</h1>
-            <p>
+            <h1 className="h1 mb-4">Hello, My name is Carl Mark Carambas</h1>
+            <p className="subtitle">
               Brief description with insights to myself, my vocatonal journey
               and what I engage in professionally
             </p>
+            {/* Buttons */}
+            <div>Buttons</div>
           </div>
           {/* image */}
-          <div className="hidden">image</div>
+          <div className="hidden xl:flex relative">image</div>
           {/* icon */}
           {/* will hide on medium size screens */}
           <div className="hidden md:flex absolute left-2/4 bottom-44 animate-bounce">
