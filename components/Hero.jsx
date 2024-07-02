@@ -21,8 +21,10 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
-          <div>
-            <div>Web Developer</div>
+          <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
+            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
+              Web Developer
+            </div>
             <h1 className="h1">Hello, My name is Carl Mark Carambas</h1>
             <p>
               Brief description with insights to myself, my vocatonal journey
@@ -30,7 +32,7 @@ const Hero = () => {
             </p>
           </div>
           {/* image */}
-          <div>image</div>
+          <div className="hidden">image</div>
           {/* icon */}
           {/* will hide on medium size screens */}
           <div className="hidden md:flex absolute left-2/4 bottom-44 animate-bounce">
@@ -39,7 +41,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  );
+  )
 };
 
 export default Hero;
