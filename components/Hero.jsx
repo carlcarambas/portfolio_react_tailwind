@@ -11,6 +11,9 @@ import {
 import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
+import { Button } from "./ui/button";
+import Link from "next/link";
+import { Download, Send } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -26,12 +29,21 @@ const Hero = () => {
               Web Developer
             </div>
             <h1 className="h1 mb-4">Hello, My name is Carl Mark Carambas</h1>
-            <p className="subtitle">
-              Brief description with insights to myself, my vocatonal journey
+            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
+              Brief description with insights to myself, my vocatonal journey,
               and what I engage in professionally
             </p>
             {/* Buttons */}
-            <div>Buttons</div>
+            <div className="flex flex-col gap-y-3 md:flex-row md:gap-x-2 mx-auto xl:mx-0 mb-12" >
+              <Link href="/contact">
+                <Button className="gap-x-2">
+                  Contact me <Send size={16} />
+                </Button>
+              </Link>
+              <Button variant="secondary" className="gap-x-2">
+                Download CV <Download size={16} />
+              </Button>
+            </div>
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">image</div>
