@@ -51,7 +51,9 @@ const Hero = () => {
             />
           </div>
           {/* image */}
-          <div className="hidden xl:flex relative">image</div>
+          <div className="hidden xl:flex relative">
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat"></div>
+          </div>
           {/* icon */}
           {/* will hide on medium size screens */}
           <div className="hidden md:flex absolute left-2/4 bottom-44 animate-bounce">
