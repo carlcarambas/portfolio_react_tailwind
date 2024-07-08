@@ -34,18 +34,21 @@ const Hero = () => {
               and what I engage in professionally
             </p>
             {/* Buttons */}
-            <div className="flex flex-col gap-y-3 md:flex-row md:gap-x-2 mx-auto xl:mx-0 mb-12" >
+            <div className="flex flex-col gap-y-3 md:flex-row md:gap-x-2 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
                 <Button className="gap-x-2">
                   Contact me <Send size={16} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
+              <Button variant="secondary" className="gap-x-2 transition">
                 Download CV <Download size={16} />
               </Button>
             </div>
             {/* Socials */}
-            <Socials />
+            <Socials
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              iconsStyles="text-foreground text-[22px] hover:text-primary transition-all"
+            />
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">image</div>
