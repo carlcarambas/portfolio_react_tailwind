@@ -52,7 +52,15 @@ const Hero = () => {
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">
-            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat"></div>
+            <div
+              className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px]
+             bg-no-repeat absolute -right-2 -top-1"
+            ></div>
+            <DevImg
+              containerStyles="bg-hero_shape dark:bg-hero_shape_dark w-[510px] h-[462px] 
+              bg-no-repeat relative bg-bottom bg-contain"
+              imgSrc="/hero/developer.png"
+            />
           </div>
           {/* icon */}
           {/* will hide on medium size screens */}
