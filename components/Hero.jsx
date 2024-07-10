@@ -57,6 +57,14 @@ const Hero = () => {
               icon={<RiBriefcaseFill />}
               endCountNum={7}
               badgeText="Years of Experience"
+              containerStyles="absolute top-[24%] -left-[5rem]"
+            />
+            <Badge
+              icon={<RiTodoFill />}
+              endCountNum={20}
+              endCountText="+"
+              badgeText="Full-Stack Projects"
+              containerStyles="absolute top-[40%] -left-[5rem] min-w-max"
             />
             <div
               className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px]
