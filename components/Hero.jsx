@@ -63,7 +63,7 @@ const Hero = () => {
               icon={<RiTodoFill />}
               endCountNum={20}
               endCountText="+"
-              badgeText="Full-Stack Projects"
+              badgeText="Enterprise Projects"
               containerStyles="absolute top-[40%] -left-[5rem] min-w-max"
             />
             <div
