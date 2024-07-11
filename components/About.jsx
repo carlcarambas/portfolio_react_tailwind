@@ -106,12 +106,23 @@ const skillData = [
 ]
 
 const About = () => {
+  const getData = (arr, title) => {
+    return arr.find((item) => item.title === title)
+  }
+  console.log(getData(qualificationData, 'education'))
   return (
-    <div>
-      {infoData.map((info, index) => (
-        <div>{info.text}</div>
-      ))}
-    </div>
+    <section className="xl:h-[868px] pb-12 xl:py-24">
+      <div className="container mx-auto">
+        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+          About Me
+        </h2>
+      </div>
+    </section>
+    // <div>
+    //   {infoData.map((info, index) => (
+    //     <div>{info.text}</div>
+    //   ))}
+    // </div>
   )
 }
 

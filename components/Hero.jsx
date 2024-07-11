@@ -78,7 +78,7 @@ const Hero = () => {
           </div>
           {/* icon */}
           {/* will hide on medium size screens */}
-          <div className="hidden md:flex absolute left-2/4 bottom-44 animate-bounce">
+          <div className="hidden md:flex absolute left-2/4 bottom-44 md:bottom-12 animate-bounce">
             <RiArrowDownSLine className="text-3xl text-primary" />
           </div>
         </div>
