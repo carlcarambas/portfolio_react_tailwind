@@ -110,7 +110,7 @@ const About = () => {
   }
   console.log(getData(qualificationData, 'education'))
   return (
-    <section className="xl:h-[868px] pb-12 xl:py-24">
+    <section className="xl:h-[860px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About Me
@@ -147,7 +147,7 @@ const About = () => {
               {/* tabs content */}
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="personal">
-                  <div>
+                  <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">
                       Quality Service for Over 7 years
                     </h3>
