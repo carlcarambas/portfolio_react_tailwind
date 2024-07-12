@@ -19,7 +19,7 @@ import { Download, Send } from 'lucide-react'
 const Hero = () => {
   return (
     <section
-      className="py-12 xl:py-24 h-[84vh] xl: pt-28 bg-hero bg-no-repeat 
+      className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat 
       bg-bottom dark:bg-none bg-cover"
     >
       <div className="container mx-auto">
@@ -35,7 +35,7 @@ const Hero = () => {
               and what I engage in professionally
             </p>
             {/* Buttons */}
-            <div className="flex flex-col gap-y-3 md:flex-row md:gap-x-2 mx-auto xl:mx-0 mb-12">
+            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
                 <Button className="gap-x-2">
                   Contact me <Send size={16} />
