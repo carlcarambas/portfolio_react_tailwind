@@ -80,6 +80,17 @@
   @apply font-bold;
 }
 
+.h2 {
+  @apply text-4xl font-bold;
+}
+
+.h3 {
+  @apply text-3xl font-bold;
+}
+
+.h4 {
+  @apply text-[22px] font-semibold;
+}
 .subtitle {
   @apply text-muted-foreground text-lg mb-8 font-light;
 }
