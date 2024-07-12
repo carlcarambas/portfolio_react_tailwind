@@ -124,13 +124,25 @@ const About = () => {
               imgSrc="/about/developer.png"
             />
           </div>
+          {/* tabs */}
           <div className="flex-1">
-            <Tabs>
-              <TabsList>
-                <TabsTrigger>Personal Info</TabsTrigger>
-                <TabsTrigger>Qualifications</TabsTrigger>
-                <TabsTrigger>Skills</TabsTrigger>
+            <Tabs defaultValue="personal">
+              <TabsList
+                className="w-full grid xl:grid-cols-3 xl:max-w-[520px] 
+              xl:border dark:border-none"
+              >
+                <TabsTrigger value="personal">Personal Info</TabsTrigger>
+                <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
+                <TabsTrigger value="skills">Skills</TabsTrigger>
               </TabsList>
+              {/* tabs content */}
+              <div className="text-lg mt-12 xl:mt-8">
+                <TabsContent value="personal">personal info</TabsContent>
+                <TabsContent value="qualifications">
+                  qualifications info
+                </TabsContent>
+                <TabsContent value="skills">skills info</TabsContent>
+              </div>
             </Tabs>
           </div>
         </div>
