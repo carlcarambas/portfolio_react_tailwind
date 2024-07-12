@@ -124,7 +124,15 @@ const About = () => {
               imgSrc="/about/developer.png"
             />
           </div>
-          <div className="flex-1">tabs</div>
+          <div className="flex-1">
+            <Tabs>
+              <TabsList>
+                <TabsTrigger>Personal Info</TabsTrigger>
+                <TabsTrigger>Qualifications</TabsTrigger>
+                <TabsTrigger>Skills</TabsTrigger>
+              </TabsList>
+            </Tabs>
+          </div>
         </div>
       </div>
     </section>
