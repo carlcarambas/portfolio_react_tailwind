@@ -170,6 +170,12 @@ const About = () => {
                         )
                       })}
                     </div>
+                    {/* languages */}
+                    <div className="flex flex-col gap-y-2">
+                      <div className="text-primary">Languages</div>
+                      <div className="border-b border-border" />
+                      <div>English, Filipino</div>
+                    </div>
                   </div>
                 </TabsContent>
                 <TabsContent value="qualifications">
