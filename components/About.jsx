@@ -110,7 +110,7 @@ const About = () => {
   }
   console.log(getData(qualificationData, 'education'))
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
+    <section className="xl:h-[860px] pb-12 py-24 xl:py-32">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About Me
@@ -156,6 +156,20 @@ const About = () => {
                       cutting-edge technology, delivering dynamic and engaging
                       user experiences.
                     </p>
+                    {/* icons */}
+                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                      {infoData.map((item, index) => {
+                        return (
+                          <div
+                            key={index}
+                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                          >
+                            <div className="text-primary">{item.icon}</div>
+                            <div>{item.text}</div>
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
                 </TabsContent>
                 <TabsContent value="qualifications">
