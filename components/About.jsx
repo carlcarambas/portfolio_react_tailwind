@@ -9,6 +9,7 @@ import {
   GraduationCap,
   Calendar,
   Phone,
+  Briefcase,
 } from 'lucide-react'
 
 const infoData = [
@@ -146,6 +147,7 @@ const About = () => {
               </TabsList>
               {/* tabs content */}
               <div className="text-lg mt-12 xl:mt-8">
+                {/* personal */}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">
@@ -178,8 +180,27 @@ const About = () => {
                     </div>
                   </div>
                 </TabsContent>
+                {/* qualifications */}
                 <TabsContent value="qualifications">
-                  qualifications info
+                  <div>
+                    <h3 className="h3 mb-8 text-center xl:text-left">
+                      Experiences
+                    </h3>
+                    {/* experience & education wrapper */}
+                    <div>
+                      {/* experience */}
+                      <div>
+                        <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                          <Briefcase />
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, 'experience').title}
+                          </h4>
+                        </div>
+                      </div>
+                      {/* education */}
+                      <div>education</div>
+                    </div>
+                  </div>
                 </TabsContent>
                 <TabsContent value="skills">skills info</TabsContent>
               </div>
