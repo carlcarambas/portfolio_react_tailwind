@@ -77,36 +77,98 @@ const qualificationData = [
 
 const skillData = [
   {
-    title: 'skills',
+    title: 'Frontend',
     data: [
       {
-        name: 'HTML, CSS',
+        imgPath: '/about/react.svg',
+        alt: 'ReactJS',
       },
       {
-        name: 'Javascript, Python',
+        imgPath: '/about/angular.svg',
+        alt: 'Angular',
       },
       {
-        name: 'Front-End Development',
+        imgPath: '/about/nextjs.svg',
+        alt: 'NextJS',
       },
       {
-        name: 'Back-End Development',
+        imgPath: '/about/redux.svg',
+        alt: 'Redux',
+      },
+      {
+        imgPath: '/about/materialui.svg',
+        alt: 'Material-UI',
+      },
+      {
+        imgPath: '/about/tailwind.svg',
+        alt: 'Tailwind CSS',
       },
     ],
   },
   {
-    title: 'tools',
+    title: 'Backend',
+    data: [
+      {
+        imgPath: '/about/nodejs.svg',
+        alt: 'NodeJS',
+      },
+      {
+        imgPath: '/about/express.svg',
+        alt: 'ExpressJS',
+      },
+      {
+        imgPath: '/about/nestjs.svg',
+        alt: 'NestJS',
+      },
+      {
+        imgPath: '/about/python.svg',
+        alt: 'Python',
+      },
+      {
+        imgPath: '/about/postgres.svg',
+        alt: 'Postgres DB',
+      },
+      {
+        imgPath: '/about/mongodb.svg',
+        alt: 'MongoDB',
+      },
+      {
+        imgPath: '/about/firebase.svg',
+        alt: 'Firebase',
+      },
+    ],
+  },
+  {
+    title: 'Web Services',
+    data: [
+      {
+        imgPath: '/about/gcp.svg',
+        alt: 'Google Cloud Services',
+      },
+      {
+        imgPath: '/about/aws.svg',
+        alt: 'Amazon Web Services',
+      },
+    ],
+  },
+  {
+    title: 'Tools',
     data: [
       {
         imgPath: '/about/vscode.svg',
+        alt: 'Visual Studio Code',
       },
       {
-        imgPath: '/about/vscode.svg',
+        imgPath: '/about/git.svg',
+        alt: 'Git',
       },
       {
-        imgPath: '/about/vscode.svg',
+        imgPath: '/about/jira.svg',
+        alt: 'Jira',
       },
       {
-        imgPath: '/about/vscode.svg',
+        imgPath: '/about/docker.svg',
+        alt: 'Docker',
       },
     ],
   },
@@ -278,50 +340,44 @@ const About = () => {
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-8">Tech Stack</h3>
-                    {/* skills */}
-                    <div className="mb-16">
-                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
-                      <div className="border-b border-border mb-4" />
-                      <div>
-                        {getData(skillData, 'skills').data.map(
-                          (item, index) => {
-                            const { name } = item
-                            return (
-                              <div
-                                key={index}
-                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
-                              >
-                                <div className="font-medium">{name}</div>
-                              </div>
-                            )
-                          }
-                        )}
-                      </div>
-                    </div>
-                    {/* tools */}
-                    <div>
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
-                        Tools
-                      </h4>
-                      {/* tool list */}
-                      <div className="border-b border-border mb-4" />
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillData, 'tools').data.map((item, index) => {
-                          const { imgPath } = item
-                          return (
-                            <div>
-                              <Image
-                                src={imgPath}
-                                width={48}
-                                height={48}
-                                alt=""
-                                priority
-                              />
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </div>
+                    {skillData.map((skill, index) => {
+                      const { data } = skill
+
+                      return (
+                        <div key={index} className="mb-16">
+                          <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                            {skill.title}
+                          </h4>
+                          {/* tech list */}
+                          <div className="border-b border-border mb-4" />
+                          <div className="flex gap-x-8 justify-center xl:justify-start dark:backdrop-brightness-125 rounded p-4">
+                            {data.map((item, _index) => {
+                              const { imgPath, alt } = item
+                              return (
+                                <div key={_index}>
+                                  <div className="relative group">
+                                    <Image
+                                      src={imgPath}
+                                      width={48}
+                                      height={48}
+                                      alt={alt}
+                                      priority
+                                    />
+                                    <span
+                                      className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 
+                                    translate-y-full opacity-0 group-hover:opacity-90 transition-opacity duration-300 text-sm 
+                                    bg-primary text-white dark:text-black p-1 rounded"
+                                    >
+                                      {alt}
+                                    </span>
+                                  </div>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        </div>
+                      )
+                    })}
                   </div>
                 </TabsContent>
               </div>
@@ -330,11 +386,6 @@ const About = () => {
         </div>
       </div>
     </section>
-    // <div>
-    //   {infoData.map((info, index) => (
-    //     <div>{info.text}</div>
-    //   ))}
-    // </div>
   )
 }
 
