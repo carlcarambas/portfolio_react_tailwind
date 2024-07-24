@@ -175,7 +175,8 @@ const About = () => {
   }
   console.log(getData(qualificationData, 'education'))
   return (
-    <section className="xl:h-[860px] pb-12 py-24 xl:py-32 xl:mb-16">
+    // xl:h-[860px] pb-12 py-24 xl:py-32 xl:mb-16
+    <section className="pb-12 py-24 xl:py-32 mb-16 xl:mb-0">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About Me
