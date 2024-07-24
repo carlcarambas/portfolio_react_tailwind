@@ -97,11 +97,11 @@ const skillData = [
       },
       {
         imgPath: '/about/materialui.svg',
-        alt: 'Material-UI',
+        alt: 'MaterialUI',
       },
       {
         imgPath: '/about/tailwind.svg',
-        alt: 'Tailwind CSS',
+        alt: 'Tailwind',
       },
     ],
   },
@@ -114,7 +114,7 @@ const skillData = [
       },
       {
         imgPath: '/about/express.svg',
-        alt: 'ExpressJS',
+        alt: 'Express',
       },
       {
         imgPath: '/about/nestjs.svg',
@@ -126,7 +126,7 @@ const skillData = [
       },
       {
         imgPath: '/about/postgres.svg',
-        alt: 'Postgres DB',
+        alt: 'Postgres',
       },
       {
         imgPath: '/about/mongodb.svg',
@@ -139,7 +139,7 @@ const skillData = [
     ],
   },
   {
-    title: 'Web Services',
+    title: 'Web Services & Tools',
     data: [
       {
         imgPath: '/about/gcp.svg',
@@ -149,11 +149,6 @@ const skillData = [
         imgPath: '/about/aws.svg',
         alt: 'Amazon Web Services',
       },
-    ],
-  },
-  {
-    title: 'Tools',
-    data: [
       {
         imgPath: '/about/vscode.svg',
         alt: 'Visual Studio Code',
@@ -180,7 +175,7 @@ const About = () => {
   }
   console.log(getData(qualificationData, 'education'))
   return (
-    <section className="xl:h-[860px] pb-12 py-24 xl:py-32">
+    <section className="xl:h-[860px] pb-12 py-24 xl:py-32 xl:mb-16">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About Me
@@ -344,7 +339,7 @@ const About = () => {
                       const { data } = skill
 
                       return (
-                        <div key={index} className="mb-16">
+                        <div key={index} className="mb-8">
                           <h4 className="text-xl font-semibold mb-2 xl:text-left">
                             {skill.title}
                           </h4>
