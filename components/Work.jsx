@@ -10,7 +10,7 @@ import 'swiper/css/pagination'
 import { Pagination } from 'swiper/modules'
 
 const Work = () => {
-  return <div>Work</div>
+  return <div>Test Work</div>
 }
 
 export default Work
