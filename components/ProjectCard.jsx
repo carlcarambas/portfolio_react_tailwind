@@ -1,5 +1,5 @@
-const ProjectCard = () => {
-  return <div>ProjectCard</div>
+const ProjectCard = ({ project }) => {
+  return <div>{project.name}</div>
 }
 
 export default ProjectCard

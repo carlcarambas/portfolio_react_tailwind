@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import { Button } from './ui/button'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+
 // swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -58,7 +60,16 @@ const Work = () => {
             <Button>All Projects</Button>
           </Link>
         </div>
-        <div>Slider</div>
+        <Swiper>
+          {/* show only first 4 projects */}
+          {projectData.slice(0, 4).map((project, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <ProjectCard project={project} />
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
       </div>
     </section>
   )
