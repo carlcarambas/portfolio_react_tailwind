@@ -62,7 +62,7 @@ const Work = () => {
         </div>
         <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[480px] bg-pink-100"
+            className="h-[480px]"
             slidesPerView={1}
             breakpoints={{ 640: { slidesPerView: 2 } }}
             spaceBetween={30}
