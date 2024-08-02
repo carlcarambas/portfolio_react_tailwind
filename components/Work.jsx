@@ -60,16 +60,18 @@ const Work = () => {
             <Button>All Projects</Button>
           </Link>
         </div>
-        <Swiper>
-          {/* show only first 4 projects */}
-          {projectData.slice(0, 4).map((project, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <ProjectCard project={project} />
-              </SwiperSlide>
-            )
-          })}
-        </Swiper>
+        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
+          <Swiper className="h-[480px] bg-pink-100">
+            {/* show only first 4 projects */}
+            {projectData.slice(0, 4).map((project, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <ProjectCard project={project} />
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
+        </div>
       </div>
     </section>
   )
