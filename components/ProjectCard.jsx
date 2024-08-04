@@ -14,12 +14,12 @@ const ProjectCard = ({ project }) => {
         bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:bg-[110%]"
         >
           <Image
-            className="absolute bottom-0 shadow-2xl"
+            className="object-fit absolute bottom-0 shadow-2xl w-[247px] h-[250px] "
             src={project.image}
             width={247}
             height={250}
             alt=""
-          ></Image>
+          />
         </div>
       </CardHeader>
       <div className="h-full px-8 py-6">
