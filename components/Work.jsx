@@ -24,19 +24,19 @@ const projectData = [
   },
   {
     image: '/work/2.png',
-    category: 'next js',
-    name: 'Lumina Website',
+    category: 'next js / nest js',
+    name: 'Copyt',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim placeat inventore aut. Obcaecati, odio!',
+      'An all in one operating system for resellers, this application includes Smart Listing & Delisting, Inventory Management, Consignment and Sourcing.',
     link: '/',
     github: '/',
   },
   {
     image: '/work/1.png',
-    category: 'next js',
-    name: 'Evolve Website',
+    category: 'react js / express js',
+    name: 'Alto Platform',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim placeat inventore aut. Obcaecati, odio!',
+      'ALTO is a contract compliance system, its main objective is to provide platform for all markets to monitor and maintain contract agreements.',
     link: '/',
     github: '/',
   },
