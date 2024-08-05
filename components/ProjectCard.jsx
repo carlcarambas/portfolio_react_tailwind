@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
         bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:bg-[110%]"
         >
           <Image
-            className="object-fit absolute bottom-0 shadow-2xl w-[247px] h-[250px] "
+            className="object-cover absolute bottom-0 shadow-2xl w-[247px] h-[250px] "
             src={project.image}
             width={247}
             height={250}
