@@ -16,9 +16,9 @@ const projectData = [
   {
     image: '/work/3.png',
     category: 'react js',
-    name: 'Nexa Website',
+    name: 'Airasia Flight Status',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim placeat inventore aut. Obcaecati, odio!',
+      'An application designed to provide real-time information about flight statuses for AirAsia flights',
     link: '/',
     github: '/',
   },

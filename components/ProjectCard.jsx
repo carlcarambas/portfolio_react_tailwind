@@ -6,7 +6,7 @@ import { Badge } from './ui/badge'
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className="group overflow-hidden relative">
+    <Card className="group overflow-hidden relative min-h-[478px]">
       <CardHeader className="p-0">
         {/* image of project */}
         <div
