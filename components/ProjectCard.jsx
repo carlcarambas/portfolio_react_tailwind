@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
             {/* link */}
             <Link
               href={project.link}
-              className="bg-secondary w-[54px] h-[54px] rounded-full 
+              className="bg-secondary/60 w-[54px] h-[54px] rounded-full 
               flex justify-center items-center
               scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
               transition-all duration-200"
@@ -36,7 +36,7 @@ const ProjectCard = ({ project }) => {
             {/* github */}
             <Link
               href={project.github}
-              className="bg-secondary w-[54px] h-[54px] rounded-full 
+              className="bg-secondary/60 w-[54px] h-[54px] rounded-full 
               flex justify-center items-center
               scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
               transition-all duration-400"
