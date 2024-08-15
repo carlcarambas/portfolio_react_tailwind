@@ -10,7 +10,7 @@ const Cta = () => {
             Let's work together. I'm here to help
           </h2>
           <Link href="/contact">
-            <Button>Contact Me</Button>
+            <Button>Contact me</Button>
           </Link>
         </div>
       </div>
