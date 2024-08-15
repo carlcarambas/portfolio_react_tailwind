@@ -1,5 +1,17 @@
-const Projects = () => {
-  return <div>Projects Page</div>;
-};
+'use client'
+import React, { useState } from 'react'
+import { projectData } from '@/lib/developer-data'
 
-export default Projects;
+const uniqueCategories = [
+  ...new Set(projectData.map((project) => project.category)),
+]
+
+const Projects = () => {
+  return (
+    <section className="min-h-screen pt-12">
+      {JSON.stringify(uniqueCategories)}
+    </section>
+  )
+}
+
+export default Projects
