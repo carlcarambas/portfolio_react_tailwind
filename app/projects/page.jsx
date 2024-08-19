@@ -1,19 +1,27 @@
 'use client'
 import React, { useState } from 'react'
 import { projectData } from '@/lib/developer-data'
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import ProjectCard from '@/components/ProjectCard'
 
-const DEFAULT_CATEGORY = 'all projects'
+const ALL_PROJECTS = 'all projects'
 
 const uniqueCategories = [
-  DEFAULT_CATEGORY,
+  ALL_PROJECTS,
   ...new Set(projectData.map((project) => project.category)),
 ]
 
 const Projects = () => {
   const [categories, setCategories] = useState(uniqueCategories)
-  const [currentCategory, setCurrentCategory] = useState(DEFAULT_CATEGORY)
-  console.log('categories', categories)
+  const [currentCategory, setCurrentCategory] = useState(ALL_PROJECTS)
+
+  const filteredProjects = projectData.filter((project) => {
+    return currentCategory === ALL_PROJECTS
+      ? project
+      : project.category === currentCategory
+  })
+
+  console.log('filteredProjects', filteredProjects)
   return (
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
@@ -22,15 +30,30 @@ const Projects = () => {
         </h2>
         {/* tabs */}
         <Tabs defaultValue={currentCategory}>
-          <TabsList>
+          <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
-                <TabsTrigger key={index} value={category}>
+                <TabsTrigger
+                  key={index}
+                  value={category}
+                  onClick={() => setCurrentCategory(category)}
+                  className="capitalize w-[162px] md:w-auto"
+                >
                   {category}
                 </TabsTrigger>
               )
             })}
           </TabsList>
+          {/* tabs content */}
+          <div>
+            {filteredProjects.map((project, index) => {
+              return (
+                <TabsContent value={currentCategory} key={index}>
+                  <ProjectCard project={project} />
+                </TabsContent>
+              )
+            })}
+          </div>
         </Tabs>
       </div>
     </section>
