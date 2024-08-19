@@ -4,9 +4,13 @@ import { Card, CardHeader } from './ui/card'
 import { FolderGit2, Link2Icon } from 'lucide-react'
 import { Badge } from './ui/badge'
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, cardStyle = null }) => {
   return (
-    <Card className="group overflow-hidden relative min-h-[478px]">
+    <Card
+      className={
+        cardStyle ? cardStyle : 'group overflow-hidden relative min-h-[478px]'
+      }
+    >
       <CardHeader className="p-0">
         {/* image of project */}
         <div

@@ -29,7 +29,7 @@ const Projects = () => {
           My Projects
         </h2>
         {/* tabs */}
-        <Tabs defaultValue={currentCategory}>
+        <Tabs defaultValue={currentCategory} className="mb-24 xl:mb-48">
           <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
@@ -45,11 +45,14 @@ const Projects = () => {
             })}
           </TabsList>
           {/* tabs content */}
-          <div>
+          <div className="text-lg xl: mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects.map((project, index) => {
               return (
                 <TabsContent value={currentCategory} key={index}>
-                  <ProjectCard project={project} />
+                  <ProjectCard
+                    project={project}
+                    cardStyle="group overflow-hidden relative min-h-[100%]"
+                  />
                 </TabsContent>
               )
             })}
