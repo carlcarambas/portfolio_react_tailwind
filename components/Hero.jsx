@@ -1,4 +1,4 @@
-import React from "react";
+'use client'
 
 import {
   RiArrowDownSLine,
@@ -17,6 +17,20 @@ import Link from 'next/link'
 import { Download, Send } from 'lucide-react'
 
 const Hero = () => {
+  const handleDownload = () => {
+    // Set the URL of the file you want to download
+    const fileUrl = '/developer-cv.pdf'
+
+    // Create a temporary link element
+    const link = document.createElement('a')
+    link.href = fileUrl
+    link.download = '' // Trigger download without specifying a filename
+
+    // Append the link to the document, click it, and then remove it
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
   return (
     <section
       className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat 
@@ -41,7 +55,12 @@ const Hero = () => {
                   Contact me <Send size={16} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2 transition">
+              {/* download cv */}
+              <Button
+                onClick={handleDownload}
+                variant="secondary"
+                className="gap-x-2 transition"
+              >
                 Download CV <Download size={16} />
               </Button>
             </div>
@@ -87,4 +106,4 @@ const Hero = () => {
   )
 }
 
-export default Hero;
+export default Hero
