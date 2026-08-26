@@ -13,7 +13,7 @@ const Footer = () => {
           />
           {/* copyright */}
           <div className="text-muted-foreground">
-            &copy; Carl Mark R. Carambas
+            &copy; {new Date().getFullYear()} Carl Mark R. Carambas
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { PanelsTopLeft, CodeXml, Layers3 } from 'lucide-react'
+import { PanelsTopLeft, CodeXml, Sparkles } from 'lucide-react'
 import {
   Card,
   CardContent,
@@ -20,10 +20,10 @@ const servicesData = [
       'RESTful API Development, Database integration, CI/CD and Documentation',
   },
   {
-    icon: <Layers3 size={72} strokeWidth={0.9} />,
-    title: 'Full-Stack Development',
-    description: `Develop and maintain web services and interfaces, front-end and back-end process, perform tests,
-    troubleshoot and fix bugs, documentation and team collaboration`,
+    icon: <Sparkles size={72} strokeWidth={0.9} />,
+    title: 'AI & LLM Integration',
+    description:
+      'Integrating OpenAI and Claude into production apps to automate document processing, compliance review, and other complex workflows',
   },
 ]
 

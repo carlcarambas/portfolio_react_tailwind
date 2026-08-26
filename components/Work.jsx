@@ -24,8 +24,8 @@ const Work = () => {
         >
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio
-            ullam impedit!
+            Platforms I have built and shipped for airlines, media agencies, and
+            commerce teams.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>

@@ -21,7 +21,6 @@ const Projects = () => {
       : project.category === currentCategory
   })
 
-  console.log('filteredProjects', filteredProjects)
   return (
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
@@ -30,7 +29,7 @@ const Projects = () => {
         </h2>
         {/* tabs */}
         <Tabs defaultValue={currentCategory} className="mb-24 xl:mb-48">
-          <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="w-full grid h-full md:grid-cols-5 lg:max-w-[780px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
                 <TabsTrigger
@@ -45,7 +44,7 @@ const Projects = () => {
             })}
           </TabsList>
           {/* tabs content */}
-          <div className="text-lg xl: mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="text-lg mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects.map((project, index) => {
               return (
                 <TabsContent value={currentCategory} key={index}>

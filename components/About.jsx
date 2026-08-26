@@ -16,11 +16,11 @@ import Image from 'next/image'
 const infoData = [
   {
     icon: <User2 size={20} />,
-    text: 'Carl Carambas',
+    text: 'Carl Mark Carambas',
   },
   {
     icon: <PhoneCall size={20} />,
-    text: '+639053690338',
+    text: '+63 905 369 0338',
   },
   {
     icon: <MailIcon size={20} />,
@@ -28,7 +28,7 @@ const infoData = [
   },
   {
     icon: <HomeIcon size={20} />,
-    text: 'Pampanga, Philippines 2010',
+    text: 'Mabalacat, Pampanga, PH',
   },
 ]
 
@@ -37,8 +37,8 @@ const qualificationData = [
     title: 'education',
     data: [
       {
-        university: 'Saint Louis University Phl.',
-        qualification: 'Bachelor of Science',
+        university: 'Saint Louis University, Baguio',
+        qualification: 'Bachelor of Information Technology',
         years: '2007 - 2012',
       },
     ],
@@ -47,29 +47,34 @@ const qualificationData = [
     title: 'experience',
     data: [
       {
-        company: 'Ulventech',
-        role: 'Senior Fullstack Engineer',
-        years: '2023 - Present',
+        company: 'Flexisource IT (Client: SCA)',
+        role: 'Senior Fullstack Developer',
+        years: 'Apr 2025 - Present',
       },
       {
-        company: 'Airasia',
+        company: 'Ulventech (Client: Kinesso)',
         role: 'Senior Software Engineer',
-        years: '2022-2023',
+        years: 'Jun 2023 - Apr 2025',
       },
       {
-        company: 'Indra',
+        company: 'AirAsia',
         role: 'Senior Software Engineer',
-        years: '2020-2022',
+        years: 'Feb 2022 - Jun 2023',
+      },
+      {
+        company: 'Indra Philippines (Client: AirAsia)',
+        role: 'Fullstack Developer',
+        years: 'Sep 2020 - Jan 2022',
       },
       {
         company: 'Sunmoon Technologies',
-        role: 'Fullstack Software Engineer',
-        years: '2019-2020',
+        role: 'Full Stack Developer',
+        years: 'Sep 2018 - Aug 2020',
       },
       {
-        company: 'Twist Resources',
-        role: 'Fullstack Software Engineer',
-        years: '2017-2019',
+        company: 'TwistResources Inc.',
+        role: 'Software Engineer',
+        years: 'Jul 2016 - Sep 2018',
       },
     ],
   },
@@ -90,6 +95,10 @@ const skillData = [
       {
         imgPath: '/about/nextjs.svg',
         alt: 'NextJS',
+      },
+      {
+        imgPath: '/about/typescript.svg',
+        alt: 'TypeScript',
       },
       {
         imgPath: '/about/redux.svg',
@@ -173,7 +182,6 @@ const About = () => {
   const getData = (arr, title) => {
     return arr.find((item) => item.title === title)
   }
-  console.log(getData(qualificationData, 'education'))
   return (
     // xl:h-[860px] pb-12 py-24 xl:py-32 xl:mb-16
     <section className="pb-12 py-24 xl:py-32 mb-16 xl:mb-0">
@@ -216,12 +224,13 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">
-                      Quality Service for Over 7 years
+                      Shipping Production Software for 10 Years
                     </h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      I specialize in crafting intuitive websites with
-                      cutting-edge technology, delivering dynamic and engaging
-                      user experiences.
+                      I work across the whole stack &mdash; React and Next.js
+                      interfaces, NestJS and Express APIs, and cloud-native
+                      deployments on AWS and GCP &mdash; for airlines, media,
+                      and commerce teams.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">

@@ -15,8 +15,8 @@ const Contact = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Let's Work Together</h1>
             <p className="subtitle max-w-[400px]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Deserunt, expedita.
+              Open to fullstack roles and project work. Send me a note and I
+              will get back to you.
             </p>
           </div>
           {/* illustration */}
@@ -37,17 +37,27 @@ const Contact = () => {
             {/* mail */}
             <div className="flex items-center gap-x-8">
               <MailIcon size={18} className="text-primary" />
-              <div>carambascarlmark@gmail.com</div>
+              <a
+                href="mailto:carlmark.carambas@gmail.com"
+                className="hover:text-primary transition-all"
+              >
+                carlmark.carambas@gmail.com
+              </a>
             </div>
             {/* address */}
             <div className="flex items-center gap-x-8">
               <HomeIcon size={18} className="text-primary" />
-              <div>2010 Pampanga, Philippines</div>
+              <div>Mabalacat, Pampanga, Philippines</div>
             </div>
             {/* number */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
-              <div>+63 905-369-0338</div>
+              <a
+                href="tel:+639053690338"
+                className="hover:text-primary transition-all"
+              >
+                +63 905 369 0338
+              </a>
             </div>
           </div>
           {/* form */}

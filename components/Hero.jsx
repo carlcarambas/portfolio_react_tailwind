@@ -41,12 +41,13 @@ const Hero = () => {
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Web Developer
+              Fullstack Software Engineer
             </div>
             <h1 className="h1 mb-4">Hello, My name is Carl Mark Carambas</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights to myself, my vocatonal journey,
-              and what I engage in professionally
+              I build production web platforms end to end &mdash; React and
+              Next.js on the front, Node.js and NestJS on the back &mdash; and
+              ship LLM-powered features into real business workflows.
             </p>
             {/* Buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -74,7 +75,7 @@ const Hero = () => {
           <div className="hidden xl:flex relative">
             <Badge
               icon={<RiBriefcaseFill />}
-              endCountNum={7}
+              endCountNum={10}
               badgeText="Years of Experience"
               containerStyles="absolute top-[24%] -left-[5rem]"
             />
